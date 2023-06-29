@@ -1,10 +1,12 @@
 'use client'
 import react from 'react';
-import { AppDevelopment, WebDevelopment, MachineLearning } from "@/full-descriptions";
-import { useState } from "react";
-import ServiceCard from '@/components/Services';
-import {FcServices} from 'react-icons/fc';
 
+import Image from 'next/image'
+import { AppDevelopment, WebDevelopment, MachineLearning, benefits } from "@/full-descriptions";
+import { useState } from "react";
+import Services from '@/components/Services';
+import {FcServices} from 'react-icons/fc';
+import BenefitsCard from '@/components/BenefitsCard';
 
 export default function Home() {
   const [fullDescription, setfullDescription] = useState("app");
@@ -45,12 +47,20 @@ export default function Home() {
       </div>
       <div className="services">
         {fullDescription == "app" ? (
-          <ServiceCard data={AppDevelopment} />
+          <Services data={AppDevelopment} />
         ) : fullDescription == "web" ? (
-          <ServiceCard data={WebDevelopment} />
+          <Services data={WebDevelopment} />
         ) : (
-          <ServiceCard data={MachineLearning} />
+          <Services data={MachineLearning} />
         )}
+      </div>
+      <div className='cards'>
+        {benefits.map((item)=>{
+          return (
+            <BenefitsCard data={item} key={item.id}/>
+          )
+        })}
+      
       </div>
     </main>
   );
