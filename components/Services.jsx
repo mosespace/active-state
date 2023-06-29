@@ -16,5 +16,4 @@ export default function ServiceCard({ data }) {
         ))}
       </div></section>
   );
-}
-console.log(ServiceCard);
+};

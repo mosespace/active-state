@@ -1,13 +1,12 @@
 'use client'
 import react from 'react';
+
 import Image from 'next/image'
 import { AppDevelopment, WebDevelopment, MachineLearning, benefits } from "@/full-descriptions";
 import { useState } from "react";
 import Services from '@/components/Services';
 import {FcServices} from 'react-icons/fc';
 import BenefitsCard from '@/components/BenefitsCard';
-
-
 
 export default function Home() {
   const [fullDescription, setfullDescription] = useState("app");
@@ -22,6 +21,10 @@ export default function Home() {
   }
   return (
     <main>
+      <FcServices className='icon' size={70} alt='Logo'/>
+          <div className='container'>
+            <h1>What can we do for you?</h1>
+          </div>
       <div className="buttons">
         <button
           className={fullDescription == "app" ? "activeBtn" : ""}
