@@ -55,9 +55,18 @@ main{
   }
 }
 
-// .services {
-//   text-align: center;
-// }
+.used-image {
+  display: grid;
+  // gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+.content {
+  // padding: 0%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .icon {
   width: 50px;
@@ -65,11 +74,37 @@ main{
   color: #ffa000;
 }
 
+// .all-cards{
+//   display: flex;
+//   flex-direction: row;
+//   background-color: #e65100;
+// }
 .cards {
+  margin-top: 1rem;
+  padding: 30px;
+  background-color: #3d00d8;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  // display: grid;
+  // gap: 1rem;
+  // grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+.card {
+  border: 1px solid #ffa500;
+}
+
+.products{
+  color: #fff;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
-.card {
-  border: 1px solid #ffa500;
+
+a {
+   text-decoration: none;
+  h1{
+    color: #ffa000;
+    
+  }
 }
