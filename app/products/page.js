@@ -1,11 +1,9 @@
-// import Image from 'next/image'
-import React from 'react'
-import getproducts from '../libs/getproducts'
+import fetchedproducts from '../libs/fetchproducts'
 import ProductCard from '@/components/ProductCard'
 import Link from 'next/link'
 
 export default async function products() {
-    const data= await getproducts()
+    const data= await fetchedproducts()
     // console.log(data) //This data was working properly.
 return (
     <section>
