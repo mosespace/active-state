@@ -1,6 +1,6 @@
-import app from "./public/images-icons/app.png";
-import machine from "./public/images-icons/machine.png";
-import web from "./public/images-icons/web.png";
+import app from "/public/images-icons/app.png";
+import machine from "/public/images-icons/machine.png";
+import web from "/public/images-icons/web.png";
 import { PiDribbbleLogoFill, PiInstagramLogoFill } from 'react-icons/pi';
 import { FaTwitter, FaLinkedin} from 'react-icons/fa';
 
