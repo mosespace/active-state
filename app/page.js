@@ -1,6 +1,6 @@
 'use client'
 import react from 'react';
-
+import Link from 'next/link';
 import Image from 'next/image'
 import { AppDevelopment, WebDevelopment, MachineLearning, benefits } from "@/full-descriptions";
 import { useState } from "react";
@@ -54,6 +54,7 @@ export default function Home() {
           <Services data={MachineLearning} />
         )}
       </div>
+      <div className='all-cards'>
       <div className='cards'>
         {benefits.map((item)=>{
           return (
@@ -62,6 +63,8 @@ export default function Home() {
         })}
       
       </div>
+      </div>
+      <Link href= "/products">Go to Products</Link>
     </main>
   );
 }
